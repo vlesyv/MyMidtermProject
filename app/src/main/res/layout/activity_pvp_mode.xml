@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fedcdb"
+    tools:context=".PvpMode">
+
+    <TextView
+        android:id="@+id/playersTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Place X"
+        android:textColor="#fd788b"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553">
+
+
+        <LinearLayout style="@style/Row">
+
+            <Button
+                android:id="@+id/B1"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/B2"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/B3"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalLine" />
+
+        <LinearLayout style="@style/Row">
+
+            <Button
+                android:id="@+id/B4"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/B5"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/B6"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalLine" />
+
+        <LinearLayout style="@style/Row">
+
+            <Button
+                android:id="@+id/B7"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/B8"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/B9"
+                style="@style/Column"
+                android:onClick="buttonIsTapped" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
